@@ -24,9 +24,9 @@ mongoose.connection.on("error",(e)=>{
 })
 
 if(process.env.NODE_ENV=="production"){
-    App.use(express.static('frontend/build'))
+    app.use(express.static('frontend/build'))
     const path=require('path')
-    App.get("*",(req,res)=>{
+    app.get("*",(req,res)=>{
         res.sendFile(path.resolve(__dirname,'frontend','build','index.html'))
     })
 }
