@@ -52,7 +52,7 @@ router.get('/myresume',signInMiddleWare,(req,res)=>{
     })
 })
 
-router.get('/resume/:id',signInMiddleWare,(req,res)=>{
+router.get('/resume/:id',(req,res)=>{
     // console.log(req.params.id)
     Resume.findOne({_id:req.params.id})
     .populate("createdby","_id name contact email")
