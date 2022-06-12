@@ -89,7 +89,7 @@ const Landing = () => {
                          
                       
                             /* // <p key={item._id} className="item"> {item._id} </p> */
-                            <h5 className="text-center saved-res"><Link to={item.resumetype=="A" ? "/resume/"+item._id : "/resumeb/"+item._id }>{"Resume "+(index+1)}</Link> <span className="btn btn-dark"><a href={"https://api.qrserver.com/v1/create-qr-code/?size=150x150&data="+item.resumetype=="A" ? "/resume/"+item._id : "/resumeb/"+item._id}>Get QR</a> </span> </h5>
+                            <h5 className="text-center saved-res"><Link to={item.resumetype=="A" ? "/resume/"+item._id : "/resumeb/"+item._id }>{"Resume "+(index+1)}</Link> <span className="btn btn-dark"><a href={"https://api.qrserver.com/v1/create-qr-code/?size=150x150&data="+"/resume/"+item._id}>Get QR</a> </span> </h5>
                         
                         )
                     })
