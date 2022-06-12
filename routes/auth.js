@@ -6,10 +6,6 @@ const jwt=require('jsonwebtoken')
 const {JWT_KEY}=require('../keys')
 const User=mongoose.model('User')
 
-router.get('/',(req,res)=>{
-    res.send("Hello")
-})
-
 router.post('/signup',(req,res)=>{
     console.log(req.body)
     const {name,email,password,contact}=req.body
