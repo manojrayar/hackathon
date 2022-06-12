@@ -3,6 +3,7 @@ const mongoose=require("mongoose")
 const {MONGO_URL}=require('./keys')
 const app=express();
 const port= process.env.PORT || 5000
+const host= '0.0.0.0'
 
 
 require('./models/user')
