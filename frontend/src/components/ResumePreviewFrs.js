@@ -31,7 +31,7 @@ const ResumePreviewFrs = () => {
             resumeinfo 
             ?
             <div className="container bg-dark text-white r-font">
-
+                <button className="btn btn-success" onClick={()=>{window.print()}} >Print</button>
             <div className="mresume">
 
            <h1 className="text-center fw-bold">
