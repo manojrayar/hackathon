@@ -31,7 +31,7 @@ if(process.env.NODE_ENV=="production"){
     })
 }
 
-app.listen(port,()=>{
+app.listen(port,host,()=>{
     console.log("Running at ",5000)
 })
 
