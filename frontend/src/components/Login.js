@@ -65,9 +65,7 @@ const Login = () => {
                   value={email} onChange={e=>{setEmail(e.target.value)}}
 
                 />
-                <label className="form-label" for="form3Example3">
-                  Email address
-                </label>
+                
               </div>
 
               {/* <!-- Password input --> */}
@@ -79,9 +77,7 @@ const Login = () => {
                   placeholder="Enter password"
                   value={pass} onChange={e=>{setPass(e.target.value)}}
                 />
-                <label className="form-label" for="form3Example4">
-                  Password
-                </label>
+              
               </div>
 
               <div className="d-flex justify-content-between align-items-center">

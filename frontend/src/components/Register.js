@@ -14,6 +14,7 @@ const Register = () => {
         if(!/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email)){
             // M.toast({html:"Invalid Email",classes:"#e53935 red"})
             console.log("email pattern missing")
+            alert("email pattern missing")
             return
         }
 
@@ -22,6 +23,7 @@ const Register = () => {
         if(! /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/.test(pass)){
             // M.toast({html:"Password should be 8 to 15 characters, at least one lowercase letter, one uppercase letter, one numeric digit, and one special character",classes:"#e53935 red"})
            console.log("password pattern missing")
+          alert("password pattern missing")
             return
         }
 
@@ -76,9 +78,7 @@ const Register = () => {
                   placeholder="Enter a valid email address"
                   value={email} onChange={e=>{setEmail(e.target.value)}}
                 />
-                <label className="form-label" for="form3Example3">
-                  Email address
-                </label>
+               
               </div>
               {/* <!-- name input --> */}
               <div className="form-outline mb-4">
@@ -89,9 +89,7 @@ const Register = () => {
                   placeholder="Enter full name"
                   value={name} onChange={e=>{setName(e.target.value)}}
                 />
-                <label className="form-label" for="form3Example3">
-                  Full Name
-                </label>
+           
               </div>
               {/* <!-- name input --> */}
               <div className="form-outline mb-4">
@@ -102,9 +100,7 @@ const Register = () => {
                   placeholder="Enter contact number"
                   value={contact} onChange={e=>{setContact(e.target.value)}}
                 />
-                <label className="form-label" for="form3Example3">
-                  Contact
-                </label>
+               
               </div>
 
               {/* <!-- Password input --> */}
@@ -116,9 +112,7 @@ const Register = () => {
                   placeholder="Enter password"
                   value={pass} onChange={e=>{setPass(e.target.value)}}
                 />
-                <label className="form-label" for="form3Example4">
-                  Password
-                </label>
+               
               </div>
 
               {/* <!-- Confirm Password input --> */}
@@ -130,9 +124,7 @@ const Register = () => {
                   placeholder="Confirm password"
                   value={cpass} onChange={e=>{setCPass(e.target.value)}}
                 />
-                <label className="form-label" for="form3Example4">
-                  Password
-                </label>
+                
               </div>
 
               <div className="text-center text-lg-start mt-4 pt-2">

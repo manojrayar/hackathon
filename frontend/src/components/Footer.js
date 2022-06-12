@@ -40,7 +40,7 @@ const Footer = () => (
         </a>
         <a
           class="btn btn-outline-light btn-floating m-1"
-          href="https://github.com/rutikkolhapure"
+          href="https://github.com/manojrayar/hackathon.git"
           role="button"
           target="blank"
         >
