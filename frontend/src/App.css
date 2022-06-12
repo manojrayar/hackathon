@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Pacifico&family=Rubik+Wet+Paint&display=swap');
+body{
+  font-family: Bree,serif;
+}
+.logo{
+  /* background: #fff; */
+  font-size: 25px;
+  font-family: 'Bree Serif', serif;
+font-family: 'Pacifico', cursive;
+font-family: 'Rubik Wet Paint', cursive;
+}
+.header{
+  /* background-color: rgb(150, 17, 17); */
+  height: 100vh;
+  line-height: 50px;
+  
+  background: url(./img/header.png);
+}
+.header h1{
+  /* background-color: #fff; */
+  margin: 40px;
+  top: 100px;
+  font-family: Bree serif;
+  position: relative;
+  font-size: 55px;
+
+
+}
+.header p{
+
+  top: 80px;
+  font-family: Bree serif;
+  position: relative;
+  font-size: 25px;
+  
+
+}
+.cbtn{
+  background-color: rgba(137, 65, 65, 0);
+  position: relative;
+  top: 70px;
+  font-size: 25px;
+
+}
+
+.section-temp h1,p{
+  font-family: Bree serif;
+}
+
+.mcard{
+  /* background-color: rgb(78, 73, 73); */
+  display: flex;
+  flex-wrap: wrap;
+  
+  margin: 10px;
+  padding: 5px;
+  justify-content: center;
+  
+  
+
+}
+.card{
+  border: 2px solid #717171;
+  border-radius: 10px;
+  margin: 40px;
+  align-items: center;
+
+}
+.card .btn{
+ 
+  padding: 5px 30px;
+  width: 180px;
+  border-radius: 50px;
+  font-size: 20px;
+}
+.card .btn:hover{
+  background-color: #fff;
+  color: black;
+  font-weight: bold;
+  transition: 0.5s ease-in-out;
+
+}
+
+.mcard img{
+  border-radius: 10px;
+  border-bottom: 2px solid #717171;
+
+}
+
+.saved-res{
+
+
+  border: 2px solid #717171;
+  padding: 15px 30px;
+  
+  
+}
+.r-font{
+  font-family: Bree, serif;
+}
